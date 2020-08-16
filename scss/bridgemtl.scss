@@ -37,16 +37,45 @@ $body-color: $black;
 $navbar-light-toggler-border-color:transparent;
 $navbar-light-color: $black;
 $navbar-light-hover-color: lighten($black, 20%);
-
+$btn-border-radius: 6px;
+$btn-border-radius-lg:10px;
 
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
 
 
 // Typography
-h1,
+
+h1 {
+    font-size: 46px;
+    font-weight: bold;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 28px;
+    }
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 24px;
+    }
+}
+
+
+h3 {
+    font-size: 32px;
+    font-weight: bold;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 20px;
+    }
+}
+
+
 p {
-    font-family: 'Cera Basic', sans-serif;
     font-weight: normal;
 }
 
@@ -139,17 +168,157 @@ main {
     padding-top: 66px;
 }
 
-section.hero-hompage {}
-
-section.tall {
-    padding-top: 80px;
-    padding-bottom: 80px;
+// Section default
+section.bmtl {
+    display: block;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow-x: hidden;
 
     @include media-breakpoint-down(sm) {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
+    &.bg-white {
+        a:not(.btn) {
+            color: $black;
+        }
+    }
+
+    &.bg-dark {
+        a:not(.btn) {
+            color: white;
+        }
+    }
 }
+
+// Section blocks
+section.hero-homepage {
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 0;
+    }
+}
+
+// Block hero homepage
+.hero-homepage-image {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 420px;
+    width: 40%;
+    background-image: url(../img/photos/homepage-hero.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 60px;
+    background-color: white;
+    z-index: 0;
+
+    @include media-breakpoint-down(sm) {
+        position: static;
+        width: 100%;
+        height: 32vh;
+        background-position: center;
+        border-bottom-right-radius: 0;
+        margin-bottom: 44px;
+    }
+}
+
+.homepage-person-1 {
+    z-index: 1;
+    position: absolute;
+    width: 330px;
+    height: 280px;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 1.5rem;
+    display: inline-block;
+    top: 240px;
+    right: -25px;
+
+    @include media-breakpoint-down(md) {
+        width: 240px;
+        height: 240px;
+        top: 320px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+
+}
+
+.homepage-person-1-mobile {
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    box-shadow: $box-shadow;
+    margin-top: -100px;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}
+
+// Block sidekick homepage
+.sidekick-homepage {
+    background: url(../img/patterns/pattern-dots-horizontal.svg) 80% top no-repeat, url(../img/patterns/pattern-circular.svg) 110% 69% no-repeat;
+    background-size: auto, auto;
+
+    @include media-breakpoint-down(sm) {
+        background: none;
+    }
+}
+
+//  Block wide image separator
+.wide-image {
+    display: block;
+    width: 100%;
+    height: 420px;
+    background-color: $light-gray;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.wide-image__1 {
+        background-image: url(../img/photos/wide-image-1.jpg);
+    }
+
+    @include media-breakpoint-down(sm) {
+        height: 30vh;
+    }
+
+}
+
+.wide-image::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 16px;
+    background-color: $red;
+    background-image:
+        linear-gradient(to top,
+            $purple,
+            $purple 60%,
+            $red 60%);
+    z-index: 2;
+
+    @include media-breakpoint-down(sm) {
+        width: 8px;
+    }
+}
+
 
 // Footer
 footer {
