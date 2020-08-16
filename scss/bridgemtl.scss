@@ -175,7 +175,7 @@ section {
     padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 
     @include media-breakpoint-down(sm) {
         padding-top: 40px;
@@ -277,10 +277,6 @@ section.sidekick-homepage {
 }
 
 //  Block wide image separator
-section.wide-image {
-    padding-top: 0;
-}
-
 .wide-image-format {
     display: block;
     width: 100%;
@@ -290,6 +286,7 @@ section.wide-image {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 
     &.wide-image__1 {
         background-image: url(../img/photos/wide-image-1.jpg);
@@ -324,7 +321,51 @@ section.wide-image {
 }
 
 // Block Grid services
-.service-grid {}
+.service-grid {
+    .service-grid-item {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    h3.service-title {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 4px solid $black;
+        margin-bottom: 20px;
+    }
+}
+
+.what-we-do {
+    border: 12px solid $light-gray;
+    border-radius: 60px;
+
+    @include media-breakpoint-down(md) {
+        border: 8px solid $light-gray;
+        border-radius: 36px;
+    }
+
+    .service-tile {
+        color: white;
+        height: 100%;
+        padding: 40px 20px;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        p.desc {
+            flex-grow: 1;
+        }
+
+
+
+
+    }
+}
 
 
 // Footer
@@ -336,6 +377,8 @@ footer {
 
     @include media-breakpoint-down(xs) {
         text-align: center;
+          border-top-left-radius: 36px;
+    border-top-right-radius: 36px;  
     }
 
     h5 {
