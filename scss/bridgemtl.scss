@@ -209,8 +209,7 @@ section {
 }
 
 // Section blocks
-.hero-homepage {
-}
+.hero-homepage {}
 
 // Block hero homepage
 .hero-homepage-image {
@@ -261,13 +260,8 @@ section {
         height: 200px;
         top: 25%;
     }
-
 }
 
-.homepage-line-1{
-    position: relative;
-    margin-top:100px;
-}
 
 // Block sidekick homepage
 .sidekick-homepage {
@@ -385,11 +379,17 @@ section {
 // Block Testimonials
 .testimonials {}
 
+.testimonial-item {
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 50px;
+    }
+}
+
 .img-testimonial {
     border-radius: 50%;
     border: 3px solid white;
     box-shadow: $box-shadow-sm;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
 }
 
@@ -398,7 +398,7 @@ section {
     border: 12px solid $light-gray;
     border-radius: 60px;
     overflow: hidden;
-    padding:60px 20px;
+    padding: 60px 20px;
 
     @include media-breakpoint-down(md) {
         border: 8px solid $light-gray;

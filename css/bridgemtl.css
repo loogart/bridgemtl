@@ -7984,10 +7984,6 @@ section {
       height: 200px;
       top: 25%; } }
 
-.homepage-line-1 {
-  position: relative;
-  margin-top: 100px; }
-
 .sidekick-homepage {
   background: url(../img/patterns/pattern-dots-horizontal.svg) 80% top no-repeat, url(../img/patterns/pattern-circular.svg) 110% 69% no-repeat;
   background-size: auto, auto;
@@ -8067,11 +8063,15 @@ section {
     .qep {
       background: none; } }
 
+@media (max-width: 767.98px) {
+  .testimonial-item {
+    margin-bottom: 50px; } }
+
 .img-testimonial {
   border-radius: 50%;
   border: 3px solid white;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
 
 .intake-form {
   border: 12px solid #EDE8E8;
