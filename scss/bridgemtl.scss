@@ -407,11 +407,12 @@ section.sidekick-homepage {
 
 }
 
+//Block intake form
 .intake-form {
     border: 12px solid $light-gray;
     border-radius: 60px;
     overflow: hidden;
-    padding:60px;
+    padding:60px 20px;
 
     @include media-breakpoint-down(md) {
         border: 8px solid $light-gray;

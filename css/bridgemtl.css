@@ -8089,7 +8089,7 @@ section.sidekick-homepage {
   border: 12px solid #EDE8E8;
   border-radius: 60px;
   overflow: hidden;
-  padding: 60px; }
+  padding: 60px 20px; }
   @media (max-width: 991.98px) {
     .intake-form {
       border: 8px solid #EDE8E8;
