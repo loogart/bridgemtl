@@ -79,11 +79,6 @@ h3 {
     }
 }
 
-a:not(.btn) {
-    text-decoration: underline;
-    font-weight: bold;
-}
-
 p {
     font-weight: normal;
 }
@@ -202,6 +197,15 @@ section {
             color: white;
         }
     }
+
+    a:not(.btn) {
+        text-decoration: underline;
+        font-weight: bold;
+
+        &:hover {
+            color: $purple;
+        }
+    }
 }
 
 // Section blocks
@@ -260,6 +264,11 @@ section.hero-homepage {
         display: none;
     }
 
+}
+
+.homepage-line-1{
+    position: relative;
+    margin-top:100px;
 }
 
 .homepage-person-1-mobile {
@@ -344,6 +353,10 @@ section.sidekick-homepage {
         border-bottom: 4px solid $black;
         margin-bottom: 20px;
     }
+
+    a {
+        color: $black;
+    }
 }
 
 // Block What we do
@@ -384,16 +397,26 @@ section.sidekick-homepage {
 }
 
 // Block Testimonials
-.testimonials{
-    
-}
+.testimonials {}
 
-.img-testimonial{
+.img-testimonial {
     border-radius: 50%;
     border: 3px solid white;
     box-shadow: $box-shadow-sm;
-    margin-bottom:30px;
-    
+    margin-bottom: 30px;
+
+}
+
+.intake-form {
+    border: 12px solid $light-gray;
+    border-radius: 60px;
+    overflow: hidden;
+    padding:60px;
+
+    @include media-breakpoint-down(md) {
+        border: 8px solid $light-gray;
+        border-radius: 36px;
+    }
 }
 
 // Footer
@@ -420,9 +443,6 @@ footer {
     }
 
     a {
-        text-decoration: none !important;
-        font-weight: normal !important;
-
         &:hover {
             color: lighten($black, 15%);
         }

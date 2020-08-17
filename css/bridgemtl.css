@@ -7856,10 +7856,6 @@ h3 {
     h3 {
       font-size: 20px; } }
 
-a:not(.btn) {
-  text-decoration: underline;
-  font-weight: bold; }
-
 p {
   font-weight: normal; }
 
@@ -7937,6 +7933,11 @@ section {
     color: #232323; }
   section.bg-dark a:not(.btn) {
     color: white; }
+  section a:not(.btn) {
+    text-decoration: underline;
+    font-weight: bold; }
+    section a:not(.btn):hover {
+      color: #592AEA; }
 
 @media (max-width: 767.98px) {
   section.hero-homepage {
@@ -7984,6 +7985,10 @@ section {
   @media (max-width: 767.98px) {
     .homepage-person-1 {
       display: none; } }
+
+.homepage-line-1 {
+  position: relative;
+  margin-top: 100px; }
 
 .homepage-person-1-mobile {
   width: 100px;
@@ -8044,6 +8049,8 @@ section.sidekick-homepage {
   padding-bottom: 20px;
   border-bottom: 4px solid #232323;
   margin-bottom: 20px; }
+.service-grid a {
+  color: #232323; }
 
 .what-we-do {
   border: 12px solid #EDE8E8;
@@ -8078,6 +8085,16 @@ section.sidekick-homepage {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   margin-bottom: 30px; }
 
+.intake-form {
+  border: 12px solid #EDE8E8;
+  border-radius: 60px;
+  overflow: hidden;
+  padding: 60px; }
+  @media (max-width: 991.98px) {
+    .intake-form {
+      border: 8px solid #EDE8E8;
+      border-radius: 36px; } }
+
 footer {
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
@@ -8094,11 +8111,8 @@ footer {
     margin-bottom: 15px; }
   footer li {
     margin-bottom: 10px; }
-  footer a {
-    text-decoration: none !important;
-    font-weight: normal !important; }
-    footer a:hover {
-      color: #494949; }
+  footer a:hover {
+    color: #494949; }
   footer .footer-artwork {
     display: block;
     width: 100%;
