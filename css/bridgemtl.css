@@ -445,7 +445,7 @@ kbd {
   font-size: 87.5%;
   color: #fff;
   background-color: #212529;
-  border-radius: 0.2rem; }
+  border-radius: 12px; }
   kbd kbd {
     padding: 0;
     font-size: 100%;
@@ -3637,7 +3637,7 @@ input[type="button"].btn-block {
   display: flex;
   padding-left: 0;
   list-style: none;
-  border-radius: 0.25rem; }
+  border-radius: 24px; }
 
 .page-link {
   position: relative;
@@ -3661,11 +3661,11 @@ input[type="button"].btn-block {
 
 .page-item:first-child .page-link {
   margin-left: 0;
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem; }
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px; }
 .page-item:last-child .page-link {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem; }
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px; }
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
@@ -3683,22 +3683,22 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: 1.5; }
 .pagination-lg .page-item:first-child .page-link {
-  border-top-left-radius: 0.3rem;
-  border-bottom-left-radius: 0.3rem; }
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px; }
 .pagination-lg .page-item:last-child .page-link {
-  border-top-right-radius: 0.3rem;
-  border-bottom-right-radius: 0.3rem; }
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px; }
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5; }
 .pagination-sm .page-item:first-child .page-link {
-  border-top-left-radius: 0.2rem;
-  border-bottom-left-radius: 0.2rem; }
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px; }
 .pagination-sm .page-item:last-child .page-link {
-  border-top-right-radius: 0.2rem;
-  border-bottom-right-radius: 0.2rem; }
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px; }
 
 .badge {
   display: inline-block;
@@ -3812,7 +3812,7 @@ input[type="button"].btn-block {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   background-color: #e9ecef;
-  border-radius: 0.3rem; }
+  border-radius: 60px; }
   @media (min-width: 576px) {
     .jumbotron {
       padding: 4rem 2rem; } }
@@ -4934,29 +4934,29 @@ button.bg-dark:focus {
   border-color: #fff !important; }
 
 .rounded-sm {
-  border-radius: 0.2rem !important; }
+  border-radius: 12px !important; }
 
 .rounded {
-  border-radius: 0.25rem !important; }
+  border-radius: 24px !important; }
 
 .rounded-top {
-  border-top-left-radius: 0.25rem !important;
-  border-top-right-radius: 0.25rem !important; }
+  border-top-left-radius: 24px !important;
+  border-top-right-radius: 24px !important; }
 
 .rounded-right {
-  border-top-right-radius: 0.25rem !important;
-  border-bottom-right-radius: 0.25rem !important; }
+  border-top-right-radius: 24px !important;
+  border-bottom-right-radius: 24px !important; }
 
 .rounded-bottom {
-  border-bottom-right-radius: 0.25rem !important;
-  border-bottom-left-radius: 0.25rem !important; }
+  border-bottom-right-radius: 24px !important;
+  border-bottom-left-radius: 24px !important; }
 
 .rounded-left {
-  border-top-left-radius: 0.25rem !important;
-  border-bottom-left-radius: 0.25rem !important; }
+  border-top-left-radius: 24px !important;
+  border-bottom-left-radius: 24px !important; }
 
 .rounded-lg {
-  border-radius: 0.3rem !important; }
+  border-radius: 60px !important; }
 
 .rounded-circle {
   border-radius: 50% !important; }
@@ -7835,14 +7835,16 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 h1 {
   font-size: 46px;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 30px; }
   @media (max-width: 767.98px) {
     h1 {
       font-size: 28px; } }
 
 h2 {
   font-size: 40px;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 20px; }
   @media (max-width: 767.98px) {
     h2 {
       font-size: 24px; } }
@@ -7853,6 +7855,10 @@ h3 {
   @media (max-width: 767.98px) {
     h3 {
       font-size: 20px; } }
+
+a:not(.btn) {
+  text-decoration: underline;
+  font-weight: bold; }
 
 p {
   font-weight: normal; }
@@ -7982,10 +7988,10 @@ section {
 .homepage-person-1-mobile {
   width: 100px;
   height: 100px;
-  border-radius: 200px;
+  border-radius: 12px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   margin-top: -100px;
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
   @media (min-width: 768px) {
     .homepage-person-1-mobile {
       display: none; } }
@@ -8059,6 +8065,19 @@ section.sidekick-homepage {
     .what-we-do .service-tile p.desc {
       flex-grow: 1; }
 
+.qep {
+  background: url(../img/patterns/pattern-dots-vertical.svg) 5% center no-repeat;
+  background-size: 169px; }
+  @media (max-width: 767.98px) {
+    .qep {
+      background: none; } }
+
+.img-testimonial {
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  margin-bottom: 30px; }
+
 footer {
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
@@ -8075,6 +8094,11 @@ footer {
     margin-bottom: 15px; }
   footer li {
     margin-bottom: 10px; }
+  footer a {
+    text-decoration: none !important;
+    font-weight: normal !important; }
+    footer a:hover {
+      color: #494949; }
   footer .footer-artwork {
     display: block;
     width: 100%;
