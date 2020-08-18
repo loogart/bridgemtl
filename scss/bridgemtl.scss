@@ -442,7 +442,7 @@ section {
 
     .nav-service-item {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         padding: 40px;
         transition: all .15s ease-in-out;
@@ -451,7 +451,10 @@ section {
         height: 100%;
 
         @include media-breakpoint-down(md) {
+            flex-direction: column;
             padding: 20px;
+            justify-content: center;
+            text-align: center;
         }
 
         &.immigration {
