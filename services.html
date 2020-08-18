@@ -48,10 +48,9 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="far fa-bars" title="menu"></i>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="./services.html">Services </a>
                     </li>
                     <li class="nav-item">
@@ -75,96 +74,61 @@
     </nav>
 
     <main>
-        <!-- Block Homepage Hero -->
-        <section class="hero-homepage">
+        <!-- NAV services -->
+        <nav class="nav-services">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <a href="./service-immigration.html" class="nav-service-item immigration">
+                            <i class="fad fa-plane fa-2x mr-4"></i>
+                            <div>
+                                <i class="far fa-arrow-right mr-2"></i>Immigration
+                                <p class="small mb-0">We offer complete immigration services.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="./service-incubation.html" class="nav-service-item incubation">
+                            <i class="fad fa-seedling fa-2x mr-4"></i>
+                            <div>
+                                <i class="far fa-arrow-right mr-2"></i>Incubation
+                                <p class="small mb-0">We help you launch your business successfully.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="./service-personal.html" class="nav-service-item personal">
+                            <i class="fad fa-concierge-bell fa-2x mr-4"></i>
+                            <div>
+                                <i class="far fa-arrow-right mr-2"></i>Personal Services
+                                <p class="small mb-0">We offer custom tailored concierge services.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Block Services General hero -->
+        <section class="bg-white hero-services">
             <div class="container">
                 <div class="row">
-                    <div class="ml-auto col-md-6 mb-5 px-4 px-md-0">
-                        <h1><span class="text-danger d-block">Helping entrepreneurs</span>immigrate to Montreal and launch a business.</h1>
-                        <p class="my-4 my-md-5"><a href="#intakeForm" class="btn btn-lg btn-primary px-5">Apply</a></p>
-                        <p class="small">Terms and conditions apply. Every case is treated Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <div class="col-lg-6 px-4 px-md-0">
+                        <h1><span class="text-danger d-block">Bridging the gap.</span>Our services.</h1>
+                        <p>BridgeMTL is dedicated to help entrepreneurs: immigrate to Quebec and Canada, accelerate their projects and succeed locally.</p>
+                        <p><a href="#!" class="btn btn-outline-dark my-3">Learn more</a></p>
                     </div>
                 </div>
             </div>
-            <div class="hero-homepage-image">
-                <div data-aos="fade-right" data-aos-duration="1000">
-                    <img class="homepage-person-1 shadow rellax" src="./img/photos/businessman1.jpg" alt="">
-                </div>
-            </div>
+            <div class="hero-services-image"></div>
         </section>
 
-        <!-- Block Homepage Sidekick -->
-        <section class="bg-white sidekick-homepage">
+        <!-- Block What we do horizontal -->
+        <section class="bg-white what-we-do no-border">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 order-md-1 pl-md-5" data-aos="zoom-in-up" data-aos-duration="1000">
-                        <img class="img-fluid rellax-2" src="./img/photos/sidekick-image.png" alt="">
-                    </div>
-                    <div class="col-md-6 order-md-0">
-                        <h2><span class="text-danger d-block">Who are we helping?</span>Business immigrants.</h2>
-                        <ul class="list-unstyled my-4">
-                            <li class="mb-2"><a href="./profile-investor.html" class="lead"><i class="far fa-arrow-right mr-3"></i>Investors</a></li>
-                            <li class="mb-2"><a href="./profile-investor.html" class="lead"><i class="far fa-arrow-right mr-3"></i>Serial entrepreneurs</a></li>
-                            <li class="mb-2"><a href="./profile-startup.html" class="lead"><i class="far fa-arrow-right mr-3"></i>Startup entrepreneurs</a></li>
-                            <li class="mb-2"><a href="./profile-freelancer.html" class="lead"><i class="far fa-arrow-right mr-3"></i>Freelancers</a></li>
-                        </ul>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s</p>
-                        <p class="my-4"><a href="#intakeForm" class="btn btn-lg btn-primary px-5">Apply today</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Block Grid Services -->
-        <section class="service-grid py-0">
-            <div class="container">
-                <h2><span class="text-danger d-block">Welcome to Montreal.</span> We’ll bridge you in.</h2>
-            </div>
-            <!-- Block Wide Image -->
-            <section class="wide-image-format wide-image__1 my-5"></section>
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-grid-item" data-aos="fade-up">
-                            <i class="fad fa-graduation-cap fa-3x mb-3"></i>
-                            <h3 class="service-title">Top student city in North America</h3>
-                            <p>Each year, some 185,000 students – including 25,000 international students from 150 countries – call Montréal home. Students make up an active part of Montréal’s population – first in line at cultural events, biking the city’s myriad cycle path system and grabbing some quiet study time in cafés.</p>
-                            <a href="#!">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-grid-item" data-aos="fade-up">
-                            <i class="fad fa-briefcase-medical fa-3x mb-3"></i>
-                            <h3 class="service-title">Universal<br>health care</h3>
-                            <p>It costs less, on average, to operate a business in Greater Montréal than in any other large metropolitan region in Canada and the United States, without even counting the very attractive incentives that are available.</p>
-                            <a href="#!">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-grid-item" data-aos="fade-up">
-                            <i class="fad fa-home fa-3x mb-3"></i>
-                            <h3 class="service-title">Low<br>cost of living</h3>
-                            <p>It costs less, on average, to operate a business in Greater Montréal than in any other large metropolitan region in Canada and the United States, without even counting the very attractive incentives that are available.</p>
-                            <a href="#!">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Block What we do -->
-        <section class="bg-white what-we-do">
-            <div class="container">
-                <h2><span class="text-danger d-block">What we do?</span> We simplify the process.</h2>
-                <div class="row my-4">
-                    <div class="col-md-6">
-                        <p>We are focused on helping business immigrants transition into the Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-lg-4 mb-4 mb-lg-0">
-                        <div class="service-tile bg-primary" data-aos="fade-up">
+                        <div class="service-tile bg-primary">
                             <i class="fad fa-plane fa-3x mb-4"></i>
                             <h3>Immigration</h3>
                             <p class="desc">Complete immigration services, from consultation to representation.</p>
@@ -172,7 +136,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4 mb-lg-0">
-                        <div class="service-tile bg-danger" data-aos="fade-up" data-aos-offset="200">
+                        <div class="service-tile bg-danger">
                             <i class="fad fa-seedling fa-3x mb-4"></i>
                             <h3>Incubation</h3>
                             <p class="desc">Call the services helping a business launch successfully in your new environment.</p>
@@ -180,7 +144,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4 mb-lg-0">
-                        <div class="service-tile bg-dark" data-aos="fade-up" data-aos-offset="300">
+                        <div class="service-tile bg-dark">
                             <i class="fad fa-concierge-bell fa-3x mb-4"></i>
                             <h3>Personal Services</h3>
                             <p class="desc">Having someone to call makes all the difference, we put you in contact with the right people and offer concierge services.</p>
@@ -192,21 +156,27 @@
             </div>
         </section>
 
-        <!-- Block QEP -->
-        <section class="bg-white qep">
+        <!-- Block Services General hero -->
+        <section class="bg-white services-profile">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-4 mb-4 mb-md-0 p-5 p-md-0">
-                        <img class="img-fluid rounded shadow" src="./img/photos/montreal-city-hall.jpg" alt="" data-aos="fade-right" data-aos-duration="1000">
+                <div class="row justify-content-center <align-items-center></align-items-center>">
+                    <div class="col-md-4 p-5 p-md-0" data-aos="fade-in">
+                        <img class="img-fluid rounded shadow" src="./img/photos/montreal-street.jpg" alt="">
                     </div>
                     <div class="col-md-6 pl-md-5">
-                        <h2><span class="text-danger d-block">The Quebec Entrepreneur Program.</span>A visa for business immigrants.</h2>
-                        <p>There are many good reasons for choosing to live and do business in Québec. Being well informed will allow you to make the right decision. Your immigration and business plans will rest on a surer footing as a result.</p>
-                        <p>To businesspeople eager to explore new horizons, Québec offers a diversified, dynamic, modern and outward-looking economy, a highly skilled labour force, competitive operating costs and an advantageous corporate tax system.</p>
-                        <p><a href="#!" target="_blank" class="">Learn more about QEP</a></p>
+                        <h2><span class="text-danger d-block">Who are we helping?</span>Business immigrants.</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s</p>
+                        <ul class="list-unstyled my-4">
+                            <li class="mb-2"><a href="./profile-investor.html" class="lead"><i class="far fa-arrow-right mr-3"></i>Investors</a></li>
+                            <li class="mb-2"><a href="./profile-investor.html" class="lead"><i class="far fa-arrow-right mr-3"></i>Serial entrepreneurs</a></li>
+                            <li class="mb-2"><a href="./profile-startup.html" class="lead"><i class="far fa-arrow-right mr-3"></i>Startup entrepreneurs</a></li>
+                            <li class="mb-2"><a href="./profile-freelancer.html" class="lead"><i class="far fa-arrow-right mr-3"></i>Freelancers</a></li>
+                        </ul>
+                        <p class="my-4"><a href="#intakeForm" class="btn btn-dark px-5">Check your eligibility</a></p>
                     </div>
                 </div>
             </div>
+
         </section>
 
         <!-- Block testimonials -->
