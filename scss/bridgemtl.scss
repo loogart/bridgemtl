@@ -42,6 +42,8 @@ $btn-border-radius-lg:10px;
 $border-radius: 24px;
 $border-radius-lg: 60px;
 $border-radius-sm: 12px;
+$btn-border-width:2px;
+$btn-font-weight: bold;
 
 // Bootstrap
 @import "../bootstrap/scss/bootstrap.scss";
@@ -387,6 +389,22 @@ section {
     &.no-border {
         border: 0;
     }
+
+    .service-tile {
+        color: $black;
+        height: 100%;
+        padding: 40px 20px;
+        border: 2px solid $black;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+
 }
 
 //Block QEP
@@ -521,7 +539,46 @@ section {
     }
 }
 
-// Block Services profiles
+//Block Profiles
+.hero-profiles {
+    background: url(../img/patterns/line-thick-side-photo.svg) right top no-repeat, url(../img/patterns/pattern-dots-horizontal.svg) 80% bottom no-repeat, url(../img/patterns/pattern-circular.svg) 20% 100% no-repeat;
+    background-size: 16px auto, auto, 280px;
+    overflow: visible;
+    display: relative;
+
+    @include media-breakpoint-down(sm) {
+        background: url(../img/patterns/line-thick-side-photo.svg) right top no-repeat, url(../img/patterns/pattern-dots-horizontal.svg) right top no-repeat, url(../img/patterns/pattern-circular.svg) 120% 40% no-repeat;
+        background-size: 8px auto, 200px, 200px;
+    }
+
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 0;
+    }
+
+    .hero-profiles-image {
+        position: absolute;
+        top: 0;
+        left: -2px;
+        width: 45%;
+        height: 100%;
+        background-image: url(../img/photos/profile-hero-image.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+
+        @include media-breakpoint-down(sm) {
+            position: static;
+            margin-left: -2px;
+            width: 100%;
+            height: 320px;
+        }
+
+
+    }
+}
+
+// Block Services
 .services-profile {
     background-image: url(../img/patterns/line-thick-side-photo.svg);
     background-size: 16px;
@@ -593,6 +650,9 @@ section {
         margin-bottom: 30px;
     }
 }
+
+
+
 
 // Footer
 footer {
