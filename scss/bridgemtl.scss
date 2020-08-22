@@ -578,6 +578,35 @@ section {
     }
 }
 
+// Hero profile variations
+.hero-profile-1 {
+    background: url(../img/patterns/pattern-dots-horizontal.svg) -5% center no-repeat, url(../img/patterns/pattern-dots-horizontal.svg) 105% center no-repeat;
+    background-size: 320px, 320px;
+    overflow: visible;
+    display: relative;
+    @include media-breakpoint-down(sm) {
+        background:none;
+    }
+}
+.hero-profile-2 {
+    background: url(../img/patterns/pattern-circular.svg) -15% center no-repeat, url(../img/patterns/pattern-circular.svg) 115% center no-repeat;
+    background-size: 300px, 300px;
+    overflow: visible;
+    display: relative;
+    @include media-breakpoint-down(sm) {
+        background:none;
+    }
+}
+.hero-profile-3 {
+    background: url(../img/patterns/pattern-dots-vertical.svg) 5% center no-repeat, url(../img/patterns/pattern-dots-vertical.svg) 95% center no-repeat;
+    background-size: 169px, 169px;
+    overflow: visible;
+    display: relative;
+    @include media-breakpoint-down(sm) {
+        background:none;
+    }
+}
+
 // Block Services
 .services-profile {
     background-image: url(../img/patterns/line-thick-side-photo.svg);
