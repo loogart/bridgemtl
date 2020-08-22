@@ -304,11 +304,36 @@ section {
     }
 
     &.wide-image__3 {
-        background-image: url(../img/photos/wide-image-1.jpg);
+        background-image: url(../img/photos/wide-image-3.jpg);
     }
 
     &.wide-image__4 {
-        background-image: url(../img/photos/wide-image-1.jpg);
+        background-image: url(../img/photos/wide-image-4.jpg);
+    }
+
+    &.wide-image__5 {
+        background-image: url(../img/photos/wide-image-5.jpg);
+    }
+
+    &.wide-image__6 {
+        background-image: url(../img/photos/wide-image-6.jpg);
+    }
+
+    &.wide-image__7 {
+        background-image: url(../img/photos/wide-image-7.jpg);
+    }
+
+    &.wide-image__8 {
+        background-image: url(../img/photos/office-bridgemtl.jpg);
+        background-position: center 10%;
+    }
+
+    &.wide-image__9 {
+        background-image: url(../img/photos/montreal-night-shot.jpg);
+    }
+
+    &.wide-image__10 {
+        background-image: url(../img/photos/hero-quebec.jpg);
     }
 
     @include media-breakpoint-down(sm) {
@@ -541,7 +566,7 @@ section {
 
 //Block Profiles
 .hero-profiles {
-    background: url(../img/patterns/line-thick-side-photo.svg) right top no-repeat, url(../img/patterns/pattern-dots-horizontal.svg) 80% bottom no-repeat, url(../img/patterns/pattern-circular.svg) 20% 100% no-repeat;
+    background: url(../img/patterns/line-thick-side-photo.svg) right top no-repeat, url(../img/patterns/pattern-dots-horizontal.svg) 95% bottom no-repeat, url(../img/patterns/pattern-circular.svg) 20% 100% no-repeat;
     background-size: 16px auto, auto, 280px;
     overflow: visible;
     display: relative;
@@ -584,26 +609,31 @@ section {
     background-size: 320px, 320px;
     overflow: visible;
     display: relative;
+
     @include media-breakpoint-down(sm) {
-        background:none;
+        background: none;
     }
 }
+
 .hero-profile-2 {
     background: url(../img/patterns/pattern-circular.svg) -15% center no-repeat, url(../img/patterns/pattern-circular.svg) 115% center no-repeat;
     background-size: 300px, 300px;
     overflow: visible;
     display: relative;
+
     @include media-breakpoint-down(sm) {
-        background:none;
+        background: none;
     }
 }
+
 .hero-profile-3 {
     background: url(../img/patterns/pattern-dots-vertical.svg) 5% center no-repeat, url(../img/patterns/pattern-dots-vertical.svg) 95% center no-repeat;
     background-size: 169px, 169px;
     overflow: visible;
     display: relative;
+
     @include media-breakpoint-down(sm) {
-        background:none;
+        background: none;
     }
 }
 
@@ -673,14 +703,54 @@ section {
             }
         }
     }
-
-    hr.total {
-        border: 3px solid $light-gray;
-        margin-bottom: 30px;
-    }
 }
 
 
+hr.total {
+    border: 3px solid $light-gray;
+    margin-bottom: 30px;
+}
+
+.bar-right::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: 15px;
+    height: 80%;
+    width: 10px;
+    background-color: $red;
+    background-image:
+        linear-gradient(to top,
+            $purple,
+            $purple 40%,
+            $red 40%);
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}
+
+.team-item{
+    margin-bottom: 50px;
+    
+    .team-member-photo{
+        width:240px;
+        height:240px;
+        border-radius: 24px;
+        margin-bottom: 20px;
+        object-fit: cover;
+    }
+    .team-member-name{
+        font-weight: bold;
+        font-size: 20px;
+        margin-top:20px;
+    }
+    .team-member-title{
+        font-weight: bold;
+        color:$red;
+        font-size: 16px;
+    }
+}
 
 
 // Footer

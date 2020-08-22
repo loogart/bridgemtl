@@ -8011,9 +8011,22 @@ section {
   .wide-image-format.wide-image__2 {
     background-image: url(../img/photos/wide-image-2.jpg); }
   .wide-image-format.wide-image__3 {
-    background-image: url(../img/photos/wide-image-1.jpg); }
+    background-image: url(../img/photos/wide-image-3.jpg); }
   .wide-image-format.wide-image__4 {
-    background-image: url(../img/photos/wide-image-1.jpg); }
+    background-image: url(../img/photos/wide-image-4.jpg); }
+  .wide-image-format.wide-image__5 {
+    background-image: url(../img/photos/wide-image-5.jpg); }
+  .wide-image-format.wide-image__6 {
+    background-image: url(../img/photos/wide-image-6.jpg); }
+  .wide-image-format.wide-image__7 {
+    background-image: url(../img/photos/wide-image-7.jpg); }
+  .wide-image-format.wide-image__8 {
+    background-image: url(../img/photos/office-bridgemtl.jpg);
+    background-position: center 10%; }
+  .wide-image-format.wide-image__9 {
+    background-image: url(../img/photos/montreal-night-shot.jpg); }
+  .wide-image-format.wide-image__10 {
+    background-image: url(../img/photos/hero-quebec.jpg); }
   @media (max-width: 767.98px) {
     .wide-image-format {
       height: 30vh; } }
@@ -8167,7 +8180,7 @@ section {
         border-bottom-left-radius: 0; } }
 
 .hero-profiles {
-  background: url(../img/patterns/line-thick-side-photo.svg) right top no-repeat, url(../img/patterns/pattern-dots-horizontal.svg) 80% bottom no-repeat, url(../img/patterns/pattern-circular.svg) 20% 100% no-repeat;
+  background: url(../img/patterns/line-thick-side-photo.svg) right top no-repeat, url(../img/patterns/pattern-dots-horizontal.svg) 95% bottom no-repeat, url(../img/patterns/pattern-circular.svg) 20% 100% no-repeat;
   background-size: 16px auto, auto, 280px;
   overflow: visible;
   display: relative; }
@@ -8269,9 +8282,41 @@ section {
         position: absolute;
         margin-left: -54px;
         margin-top: -20px; }
-  .process hr.total {
-    border: 3px solid #EDE8E8;
-    margin-bottom: 30px; }
+
+hr.total {
+  border: 3px solid #EDE8E8;
+  margin-bottom: 30px; }
+
+.bar-right::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: 15px;
+  height: 80%;
+  width: 10px;
+  background-color: #EF3426;
+  background-image: linear-gradient(to top, #592AEA, #592AEA 40%, #EF3426 40%); }
+  @media (max-width: 767.98px) {
+    .bar-right::before {
+      display: none; } }
+
+.team-item {
+  margin-bottom: 50px; }
+  .team-item .team-member-photo {
+    width: 240px;
+    height: 240px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    object-fit: cover; }
+  .team-item .team-member-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px; }
+  .team-item .team-member-title {
+    font-weight: bold;
+    color: #EF3426;
+    font-size: 16px; }
 
 footer {
   border-top-left-radius: 60px;
