@@ -51,6 +51,12 @@ $btn-font-weight: bold;
 
 // Typography
 
+body {
+    &.dark {
+        background-color: $black;
+    }
+}
+
 h1 {
     font-size: 46px;
     font-weight: bold;
@@ -205,6 +211,15 @@ section {
         a:not(.btn) {
             color: white;
         }
+
+        h1,
+        h2,
+        h3,
+        p,
+        li,
+            {
+            color: white;
+        }
     }
 
     a:not(.btn) {
@@ -283,11 +298,21 @@ section {
     }
 }
 
+.sidekick-homepage-dark {
+    background: url(../img/patterns/pattern-dots-horizontal-dark.svg) 80% top no-repeat;
+    background-size: auto;
+    overflow: visible;
+
+    @include media-breakpoint-down(sm) {
+        background: none;
+    }
+}
+
 //  Block wide image separator
 .wide-image-format {
     display: block;
     width: 100%;
-    height: 420px;
+    height: 69vh;
     background-color: $light-gray;
     position: relative;
     background-position: center;
@@ -334,6 +359,7 @@ section {
 
     &.wide-image__10 {
         background-image: url(../img/photos/hero-quebec.jpg);
+        background-position: center 69%;
     }
 
     @include media-breakpoint-down(sm) {
@@ -390,6 +416,10 @@ section {
     border: 12px solid $light-gray;
     border-radius: 60px;
 
+    &.border-dark {
+        border: 12px solid $dark-gray !important;
+    }
+
     @include media-breakpoint-down(md) {
         border: 8px solid $light-gray;
         border-radius: 36px;
@@ -426,15 +456,21 @@ section {
         justify-content: center;
         align-items: center;
         text-align: center;
-
     }
-
-
 }
 
 //Block QEP
 .qep {
     background: url(../img/patterns/pattern-dots-vertical.svg) 5% center no-repeat;
+    background-size: 169px;
+
+    @include media-breakpoint-down(sm) {
+        background: none;
+    }
+}
+
+.qep-dark {
+    background: url(../img/patterns/pattern-dots-vertical-dark.svg) 5% center no-repeat;
     background-size: 169px;
 
     @include media-breakpoint-down(sm) {
@@ -459,6 +495,10 @@ section {
 
 }
 
+.testimonials-dark {
+    background-color: $dark-gray !important;
+}
+
 // Block intake form
 .intake-form {
     border: 12px solid $light-gray;
@@ -474,6 +514,10 @@ section {
     .logo {
         width: 75px;
         margin-bottom: 30px;
+    }
+
+    &.intake-form-dark {
+        border: 12px solid $dark-gray !important;
     }
 }
 
@@ -725,33 +769,43 @@ hr.total {
             $purple,
             $purple 40%,
             $red 40%);
+
     @include media-breakpoint-down(sm) {
         display: none;
     }
 }
 
-.team-item{
+.team-item {
     margin-bottom: 50px;
-    
-    .team-member-photo{
-        width:240px;
-        height:240px;
+
+    .team-member-photo {
+        width: 240px;
+        height: 240px;
         border-radius: 24px;
         margin-bottom: 20px;
         object-fit: cover;
     }
-    .team-member-name{
+
+    .team-member-name {
         font-weight: bold;
         font-size: 20px;
-        margin-top:20px;
+        margin-top: 20px;
     }
-    .team-member-title{
+
+    .team-member-title {
         font-weight: bold;
-        color:$red;
+        color: $red;
         font-size: 16px;
     }
 }
 
+.bg-top-white {
+    background-image:
+        linear-gradient(to bottom,
+            white,
+            white 10%,
+            $red 10%);
+}
 
 // Footer
 footer {
