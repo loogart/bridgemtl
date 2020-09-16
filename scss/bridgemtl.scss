@@ -234,7 +234,16 @@ section {
 }
 
 // Section blocks
-.hero-homepage {}
+.hero-homepage {
+    overflow: visible;
+    z-index: 1;
+
+    @include media-breakpoint-down(sm) {
+        overflow: hidden;
+        z-index: 0;
+    }
+
+}
 
 // Block hero homepage
 .hero-homepage-image {
@@ -284,6 +293,32 @@ section {
         width: 220px;
         height: 200px;
         top: 25%;
+    }
+}
+
+.jumbotron-people {
+    z-index: 1;
+    position: absolute;
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 1.5rem;
+    display: inline-block;
+    top: 169px;
+    right: -69px;
+
+    @include media-breakpoint-down(md) {
+        width: 369px;
+        top: 225px;
+        left: 36px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        max-width: 86%;
+        top: 49px;
+        right: 0;
+        left: auto;
     }
 }
 
